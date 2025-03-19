@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package game;
+option go_package = "github.com/JokerTrickster/grpc_example/pkg/game";
+
+import "google/protobuf/empty.proto";
+
+
+service Game {
+    rpc SetGameData(RequestGameInfo) returns (google.protobuf.Empty) {}
+    rpc GetGameData(google.protobuf.Empty) returns (ResponseGameInfo) {}
+}
+
+
+message RequestGameInfo {
+    uint32 round = 1;
+    repeated int32 map = 2;
+    uint32 roomID = 3;
+}
+
+message ResponseGameInfo {
+    uint32 round = 1;
+    repeated int32 map = 2;
+    uint32 roomID = 3;
+}

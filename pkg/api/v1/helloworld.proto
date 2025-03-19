@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package helloworld;
+option go_package = "github.com/JokerTrickster/grpc_example/pkg/api/v1";
+
+service Greeter {
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
+    
+    rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloReply {
+    string message = 1;
+}
