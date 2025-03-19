@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package game;
-option go_package = "github.com/JokerTrickster/grpc_example/pkg/game";
+package proto;
+option go_package = "github.com/JokerTrickster/grpc_example/pkg/proto";
 
 import "google/protobuf/empty.proto";
 

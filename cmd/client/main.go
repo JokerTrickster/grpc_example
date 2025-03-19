@@ -7,7 +7,7 @@ import (
 	"time"
 
 	pb "github.com/JokerTrickster/grpc_go/pkg/api/v1"
-	game "github.com/JokerTrickster/grpc_go/pkg/game"
+	game "github.com/JokerTrickster/grpc_go/pkg/proto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"

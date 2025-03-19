@@ -4,7 +4,7 @@
 // - protoc             v5.29.3
 // source: game.proto
 
-package game
+package proto
 
 import (
 	context "context"
@@ -20,8 +20,8 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	Game_SetGameData_FullMethodName = "/game.Game/SetGameData"
-	Game_GetGameData_FullMethodName = "/game.Game/GetGameData"
+	Game_SetGameData_FullMethodName = "/proto.Game/SetGameData"
+	Game_GetGameData_FullMethodName = "/proto.Game/GetGameData"
 )
 
 // GameClient is the client API for Game service.
@@ -143,7 +143,7 @@ func _Game_GetGameData_Handler(srv interface{}, ctx context.Context, dec func(in
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var Game_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "game.Game",
+	ServiceName: "proto.Game",
 	HandlerType: (*GameServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
